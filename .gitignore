@@ -3,7 +3,6 @@ choco-cli/target/
 choco-contribs/target/
 choco-cp/target/
 choco-db/target/
-choco-kernel/src/main/java/com/
 choco-kernel/target/
 choco-parsers/target/
 choco-solver/target/
