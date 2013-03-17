@@ -323,16 +323,16 @@ public final class SetDomainImpl implements SetDomain {
 
         public int next() {
             int i = (currentValue == Integer.MIN_VALUE) ? envdomain.getFirstVal() : envdomain.getNextValue(currentValue);
-            int last = envdomain.getLastVal();
-            for (; i <= last; i = envdomain.getNextValue(i)) {
-                if (!kerdomain.contains(i)) {
-                    currentValue = i;
-                    break;
-                }
-                if (i == last) {
-                    break;
-                }
+            if (kerdomain.contains(i)) {
+                int last = envdomain.getLastVal();
+                do {
+                    i = envdomain.getNextValue(i);
+                    if (!kerdomain.contains(i)) {
+                        break;
+                    }
+                } while (i < last);
             }
+            currentValue = i;
             nbValueToBeIterated -= 1;
             return currentValue;
         }
