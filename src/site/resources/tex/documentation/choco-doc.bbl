@@ -1,0 +1,165 @@
+\begin{thebibliography}{}
+
+\bibitem[Beldiceanu and Carlsson, 2002]{BeldiceanuCP02}
+Beldiceanu, N. and Carlsson, M. (2002).
+\newblock A new multi-resource {\tt cumulatives} constraint with negative
+  heights.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'02)}, volume 2470 of {\em LNCS}, pages 63--79.
+  Springer-Verlag.
+
+\bibitem[Beldiceanu et~al., 2005]{BeldiceanuC05}
+Beldiceanu, N., Carlsson, M., Debruyne, R., and Petit, T. (2005).
+\newblock Reformulation of global constraints based on constraint checkers.
+\newblock {\em Constraints}, 10(4):339--362.
+
+\bibitem[Beldiceanu et~al., 2008]{beldiceanuCONSTRAINTS08}
+Beldiceanu, N., Flener, P., and Lorca, X. (2008).
+\newblock Combining tree partitioning, precedence, and incomparability
+  constraints.
+\newblock {\em Constraints}, 13(4):459--489.
+
+\bibitem[Bessi\`ere et~al., 2005a]{Bessiere05ERCIM}
+Bessi\`ere, C., Hebrard, E., Hnich, B., K{\i}z{\i}ltan, Z., and Walsh, T.
+  (2005a).
+\newblock {\it Among}, {\it common} and {\it disjoint} {C}onstraints.
+\newblock In Carlsson, M., Fages, F., Hnich, B., and Rossi, F., editors, {\em
+  Joint ERCIM/CoLogNET International Workshop on Constraint Solving and
+  Constraint Logic Programming (CSCLP 2005)}, pages 223--235.
+
+\bibitem[Bessi\`ere et~al., 2005b]{BessiereCPAIOR05}
+Bessi\`ere, C., Hebrard, E., Hnich, B., K{\i}z{\i}ltan, Z., and Walsh, T.
+  (2005b).
+\newblock Filtering algorithms for the {\tt nvalue} constraint.
+\newblock In {\em International Conference on Integration of AI and OR
+  Techniques in Constraint Programming for Combinatorial Optimization Problems
+  (CPAIOR'05)}, volume 3524 of {\em LNCS}, pages 79--93. Springer-Verlag.
+
+\bibitem[Bessi\`ere et~al., 2006]{Bessiere06ERCIM}
+Bessi\`ere, C., Hebrard, E., Hnich, B., K{\i}z{\i}ltan, Z., and Walsh, T.
+  (2006).
+\newblock {\it Among}, {\it common} and {\it disjoint} {C}onstraints.
+\newblock In Hnich, B., Carlsson, M., Fages, F., and Rossi, F., editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/Colognet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP05; Uppsala,
+  Sweden, June 2005; Revised Selected and Invited Papers}, volume 3978 of {\em
+  LNAI}, pages 28--43. Springer\nobreakdash-Verlag.
+
+\bibitem[Bleuzen-Guernalec and Colmerauer, 1997]{BleuzenCP97}
+Bleuzen-Guernalec, N. and Colmerauer, A. (1997).
+\newblock Narrowing a block of sortings in quadratic time.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'97)}, volume~? of {\em LNCS}, pages ?--?
+  Springer-Verlag.
+
+\bibitem[Boussemart et~al., 2004]{Boussemart04}
+Boussemart, F., Hemery, F., Lecoutre, C., and Sais, L. (2004).
+\newblock Boosting systematic search by weighting constraints.
+\newblock In {\em Proceedings of the 16th European Conference on Artificial
+  Intelligence (ECAI'04)}, pages 146--150. IOS Press 2004.
+
+\bibitem[Carlsson and Beldiceanu, 2002]{BeldiceanuSICS02}
+Carlsson, M. and Beldiceanu, N. (2002).
+\newblock Arc-consistency for a chain of lexicographic ordering constraints.
+\newblock Technical Report T2002-18, Swedish Institute of Computer Science.
+
+\bibitem[Demassey et~al., 2006]{DemasseyC06}
+Demassey, S., Pesant, G., and Rousseau, L.-M. (2006).
+\newblock A \texttt{Cost-Regular} based hybrid column generation approach.
+\newblock {\em Constraints}, 11(4):315--333.
+\newblock Special issue following CPAIOR'05.
+
+\bibitem[Frisch et~al., 2002]{FrischCP02}
+Frisch, A.~M., Hnich, B., K{\i}z{\i}ltan, Z., Miguel, I., and Walsh, T. (2002).
+\newblock Global constraints for lexicographic orderings.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 93--108.
+  Springer-Verlag.
+
+\bibitem[Frisch et~al., 2003]{FrischIJCAI03}
+Frisch, A.~M., Hnich, B., K{\i}z{\i}ltan, Z., Miguel, I., and Walsh, T. (2003).
+\newblock Multiset ordering constraints.
+\newblock In {\em 18th International Joint Conference on Artificial
+  Intelligence (IJCAI'03)}.
+
+\bibitem[L\'opez-Ortiz et~al., 2003]{LopezIJCAI03}
+L\'opez-Ortiz, A., Quimper, C.-G., Tromp, J., and van Beek, P. (2003).
+\newblock A fast and simple algorithm for bounds consistency of the {\tt
+  alldifferent} constraint.
+\newblock In {\em 18th International Joint Conference on Artificial
+  Intelligence (IJCAI'03)}, pages 245--250.
+
+\bibitem[Mehlhorn and Thiel, 2000]{MehlhornCP00}
+Mehlhorn, K. and Thiel, S. (2000).
+\newblock Faster algorithms for bound-consistency of the sortedness and the
+  alldifferent constraint.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'00)}, volume~? of {\em LNCS}, pages ?--?
+  Springer-Verlag.
+
+\bibitem[Menana and Demassey, 2009]{MenanaCPAIOR09}
+Menana, J. and Demassey, S. (2009).
+\newblock Sequencing and counting with the {\tt multicost-regular} constraint.
+\newblock In {\em International Conference on Integration of AI and OR
+  Techniques in Constraint Programming for Combinatorial Optimization Problems
+  (CPAIOR'09)}, volume 5547 of {\em LNCS}, pages 178--192. Springer-Verlag.
+
+\bibitem[Pesant, 2004]{PesantCP04}
+Pesant, G. (2004).
+\newblock A regular language membership constraint for finite sequences of
+  variables.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'04)}, volume 3258 of {\em LNCS}, pages 482--495.
+  Springer-Verlag.
+
+\bibitem[Quimper et~al., 2003]{QuimperCP03}
+Quimper, C.-G., van Beek, P., L\'opez-Ortiz, A., Golynski, A., and Sadjad,
+  S.~B. (2003).
+\newblock An efficient bounds consistency algorithm for the {\it
+  global-cardinality} constraint.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'03)}, volume 2833 of {\em LNCS}, pages 600--614.
+  Springer-Verlag.
+
+\bibitem[Refalo, 2004]{Refalo04}
+Refalo, P. (2004).
+\newblock Impact-based search strategies for constraint programming.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'04)}, volume 3258 of {\em LNCS}, pages 557--570.
+  Springer-Verlag.
+
+\bibitem[R{\'e}gin, 1994]{ReginAAAI94}
+R{\'e}gin, J.-C. (1994).
+\newblock A filtering algorithm for constraints of difference in {CSP}.
+\newblock In {\em 12th National Conference on Artificial Intelligence
+  (AAAI'94)}, pages 362--367.
+
+\bibitem[R\'egin, 1996]{ReginAAAI96}
+R\'egin, J.-C. (1996).
+\newblock Generalized arc consistency for {\tt global-cardinality} constraint.
+\newblock In {\em 14th National Conference on Artificial Intelligence
+  (AAAI'96)}, pages 209--215.
+
+\bibitem[Shaw, 2004]{ShawCP04}
+Shaw, P. (2004).
+\newblock A constraint for bin packing.
+\newblock In {\em International Conference on Principles and Practice of
+  Constraint Programming (CP'04)}, volume 3258 of {\em LNCS}, pages 648--662.
+  Springer-Verlag.
+
+\bibitem[Simonis et~al., 2010]{Simonis10}
+Simonis, H., Davern, P., Feldman, J., Mehta, D., Quesada, L., and Carlsson, M.
+  (2010).
+\newblock A generic visualization platform for cp.
+\newblock In {\em Principles and Practice of Constraint Programming -- CP
+  2010)}, LNCS, pages 460--474. Cohen, David.
+
+\bibitem[Trick, 2003]{TrickAOR03}
+Trick, M.~A. (2003).
+\newblock A dynamic programming approach for consistency and propagation for
+  knapsack constraints.
+\newblock In Netherlands, S., editor, {\em Annals of Operations Research},
+  volume Volume 118, Numbers 1-4 / feb. 2003, pages 73--84. Springer
+  Netherlands.
+
+\end{thebibliography}
