@@ -263,7 +263,7 @@ public class BitSetEnumeratedDomain implements SetSubDomain {
     public int getPrevValue(int x) {
         int i = x - offset;
     int val = contents.prevSetBit(i - 1);
-    if (val > 0)
+    if (val >= 0)
       return val + offset;
     else
       return -1;

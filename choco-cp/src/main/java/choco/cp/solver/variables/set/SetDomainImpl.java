@@ -24,7 +24,6 @@
  *  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package choco.cp.solver.variables.set;
 
 import choco.kernel.common.util.iterators.DisposableIntIterator;
@@ -47,15 +46,10 @@ import java.util.Arrays;
 public final class SetDomainImpl implements SetDomain {
 
     private final PropagationEngine propagationEngine;
-
     private final SetVar variable;
-
     private final BitSetEnumeratedDomain kernel;
-
     private final BitSetEnumeratedDomain enveloppe;
-
     private SetDomainIterator _kiterator, _eiterator;
-
     protected SetOpenDomainIterator _oiterator;
 
     public SetDomainImpl(final SetVar v, final int a, final int b, final IEnvironment environment, final PropagationEngine propagationEngine) {
@@ -93,7 +87,6 @@ public final class SetDomainImpl implements SetDomain {
         this.propagationEngine = propagationEngine;
     }
 
-
     public SetSubDomain getKernelDomain() {
         return kernel;
     }
@@ -125,7 +118,6 @@ public final class SetDomainImpl implements SetDomain {
     }
 
     //TODO : a bitset instead of a int[] ?
-
     boolean canBeInstantiatedTo(final int[] setVal) {
         if (kernel.getSize() <= setVal.length && enveloppe.getSize() >= setVal.length) {
             Arrays.sort(setVal);   // TODO : can we suppose that the table is sorted ?
@@ -184,7 +176,6 @@ public final class SetDomainImpl implements SetDomain {
     // ============================================
 
     // Si promotion, il faut annuler la cause
-
     public boolean remFromEnveloppe(final int x, final SConstraint cause, final boolean forceAwake) throws ContradictionException {
         if (_remFromEnveloppe(x, cause)) {
             if (isInstantiated()) {
@@ -198,7 +189,6 @@ public final class SetDomainImpl implements SetDomain {
     }
 
     // Si promotion, il faut annuler la cause
-
     public boolean addToKernel(final int x, final SConstraint cause, final boolean forceAwake) throws ContradictionException {
         if (_addToKernel(x, cause)) {
             if (isInstantiated()) {
@@ -221,7 +211,6 @@ public final class SetDomainImpl implements SetDomain {
     }
 
     // Si promotion, il faut annuler la cause
-
     boolean _remFromEnveloppe(final int x, final SConstraint cause) throws ContradictionException {
         if (kernel.contains(x)) {
             propagationEngine.raiseContradiction(cause);
@@ -234,7 +223,6 @@ public final class SetDomainImpl implements SetDomain {
     }
 
     // Si promotion, il faut annuler la cause
-
     boolean _addToKernel(final int x, final SConstraint cause) throws ContradictionException {
         if (!enveloppe.contains(x)) {
             propagationEngine.raiseContradiction(cause);
@@ -275,12 +263,11 @@ public final class SetDomainImpl implements SetDomain {
     // ============================================
     // Iterators on kernel and enveloppe.
     // ============================================
-
     public DisposableIntIterator getKernelIterator() {
 //        return SetDomainIterator.getIterator(this.kernel);
         if (_kiterator == null) {
             _kiterator = new SetDomainIterator();
-        }else if (!_kiterator.reusable()) {
+        } else if (!_kiterator.reusable()) {
 //            assert false;
             _kiterator = new SetDomainIterator();
         }
@@ -292,7 +279,7 @@ public final class SetDomainImpl implements SetDomain {
     public DisposableIntIterator getEnveloppeIterator() {
         if (_eiterator == null) {
             _eiterator = new SetDomainIterator();
-        }else if (!_eiterator.reusable()) {
+        } else if (!_eiterator.reusable()) {
 //            assert false;
             _eiterator = new SetDomainIterator();
         }
@@ -303,7 +290,7 @@ public final class SetDomainImpl implements SetDomain {
     public DisposableIntIterator getOpenDomainIterator() {
         if (_oiterator == null) {
             _oiterator = new SetOpenDomainIterator();
-        }else if (!_oiterator.reusable()) {
+        } else if (!_oiterator.reusable()) {
 //            assert false;
             _oiterator = new SetOpenDomainIterator();
         }
@@ -336,9 +323,13 @@ public final class SetDomainImpl implements SetDomain {
 
         public int next() {
             int i = (currentValue == Integer.MIN_VALUE) ? envdomain.getFirstVal() : envdomain.getNextValue(currentValue);
-            for (; i >= 0; i = envdomain.getNextValue(i)) {
+            int last = envdomain.getLastVal();
+            for (; i <= last; i = envdomain.getNextValue(i)) {
                 if (!kerdomain.contains(i)) {
                     currentValue = i;
+                    break;
+                }
+                if (i == last) {
                     break;
                 }
             }
